@@ -4,7 +4,7 @@ import Logo from '../components/Logo'
 import Header from '../components/Header'
 import Paragraph from '../components/Paragraph'
 import Button from '../components/Button'
-import { StyleSheet, Text, View, Dimensions } from 'react-native'
+import { StyleSheet } from 'react-native'
 
 import MapView, { Marker } from 'react-native-maps';
 
@@ -14,12 +14,9 @@ import useFetch from 'use-http'
 
 const Dashboard = ({ navigation }) => {
 
-  const [business, setBusiness] = useState([])
-
 
   const { loading, error, data = [] } = useFetch('https://uaejrc0pgd.execute-api.us-east-1.amazonaws.com/test', {}, [])
 
-  console.log(data.body);
 
   return (
     <Background>
