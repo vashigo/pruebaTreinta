@@ -83,11 +83,12 @@ expo build:android
 
 ## Tecnologias usadas
 
-1. React Native
+1. React Native y React.js
 2. node.js
-3. expo
+3. expo  (conjunto de herramientas, librerías y servicios los cuales te permiten desarrollar apps nativas)
 4. servicios nube aws ( api gateway, lambda ), se diseño una funcion lambda para retornar la lista de negocios y se conecto por un api gateway de aws con metodo GET.
 5. api google maps ( maps sdk android )
+6. Adobe XD ( diseño aplicativo inicial)
 
 ## Autor
 
