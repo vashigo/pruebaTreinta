@@ -21,6 +21,11 @@
     },
     "android": {
       "package": "com.treinta.business",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyCZ9NyskvItF5xWKaM9ogS-oPybb9n6mGk"
+        }
+      },
       "versionCode": 1,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",

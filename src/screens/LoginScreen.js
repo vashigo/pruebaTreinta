@@ -24,6 +24,10 @@ const LoginScreen = ({ navigation }) => {
       setPassword({ ...password, error: passwordError })
       return
     }
+    navigation.reset({
+      index: 0,
+      routes: [{ name: 'Dashboard' }],
+    })
   }
 
   return (

@@ -86,6 +86,8 @@ expo build:android
 1. React Native
 2. node.js
 3. expo
+4. servicios nube aws ( api gateway, lambda ), se diseño una funcion lambda para retornar la lista de negocios y se conecto por un api gateway de aws con metodo GET.
+5. api google maps ( maps sdk android )
 
 ## Autor
 

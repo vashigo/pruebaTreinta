@@ -8,6 +8,7 @@ import {
   LoginScreen,
   RegisterScreen,
   Dashboard,
+  Info
 } from './src/screens'
 
 const Stack = createStackNavigator()
@@ -25,6 +26,7 @@ const App = () => {
           <Stack.Screen name="StartScreen" component={StartScreen} />
           <Stack.Screen name="LoginScreen" component={LoginScreen} />
           <Stack.Screen name="RegisterScreen" component={RegisterScreen} />
+          <Stack.Screen name="Info" component={Info} />
           <Stack.Screen name="Dashboard" component={Dashboard} />
         </Stack.Navigator>
       </NavigationContainer>

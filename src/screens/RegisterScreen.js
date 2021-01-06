@@ -29,20 +29,10 @@ const RegisterScreen = ({ navigation }) => {
       setPassword({ ...password, error: passwordError })
       return
     }
-
-    const auth0 = new Auth0({ domain: 'dev-treintabusiness.us.auth0.com', clientId: 'tBGXgA3SoknanPy6WVwWSdJKXLTo1rif' });
-
-
-    auth0
-    .webAuth
-    .authorize({scope: 'openid profile email'})
-    .then(credentials =>
-      // Successfully authenticated
-      // Store the accessToken
-      this.setState({ accessToken: credentials.accessToken })
-    )
-    .catch(error => console.log(error));
-
+    navigation.reset({
+      index: 0,
+      routes: [{ name: 'Dashboard' }],
+    })
   }
 
   return (
